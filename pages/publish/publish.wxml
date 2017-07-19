@@ -1,0 +1,41 @@
+<block wx:if="{{!success}}">
+	<view class="area">
+		<text class="area-title">我的地址</text>
+		<view class="area-info" bindtap="handleAddressTap">{{address}}</view>
+	</view>
+
+	<view class="area">
+		<text class="area-title">类型</text>
+		<view class="area-info">
+			<radio-group class="radio-group" bindchange="handleTypeChange">
+	  			<label class="radio">
+	    			<radio value="sell" />出售
+	  			</label>
+	  			<label class="radio">
+	    			<radio value="buy" />求购
+	  			</label>
+			</radio-group>
+		</view>
+	</view>
+
+	<view class="area">
+		<text class="area-title">说明</text>
+		<input class="area-info" placeholder="填写您的具体需求" placeholder-class="placeholder" bindinput="handleMessageInput"/>
+	</view>
+
+	<view class="area">
+		<text class="area-title">联系方式</text>
+		<input class="area-info" placeholder="填写您的联系方式" placeholder-class="placeholder" bindinput="handleContactInput"/>
+	</view>
+
+	<view class="btn" bindtap="handlePostTap">发布信息</view>
+</block>
+
+<block wx:if="{{success}}">
+	<view class="wrapper">
+		<view class="succ-title"><icon class="succ-icon" type="success" size="40" color="#22cad3"/>恭喜您,发布成功！</view>
+		<view class="succ-item">1. 审核通过后信息将被展示在地图上</view>
+		<view class="succ-item">2. 信息有效期为30天,30天后自动清除</view>
+		<navigator url="/pages/index/index" class="btn" bindtap="handleBackHome" >返回首页</navigator>
+	</view>
+</block>

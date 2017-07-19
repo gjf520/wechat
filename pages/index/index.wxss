@@ -1,0 +1,26 @@
+.index-map {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width:100%; 
+    bottom:42px;
+}
+.css-bottom {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height:42px;
+    text-align: center;
+    color: #fff;
+}
+.bottom-publish {
+    flex: 1;
+    background: #ff9700;
+}
+.bottom-search {
+    flex: 1;
+    background: #03bbd5;
+}
