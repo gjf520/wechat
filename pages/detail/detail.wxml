@@ -1,6 +1,7 @@
-<view class="area">{{address}}</view>
+<view class="area">地址：{{address}}</view>
 <view class="area">
+	<text class="area-title">类型：</text>
 	<image class="typeicon" src="/resource/{{type}}.png"/>{{textType}}
 </view>
-<view class="area">{{message}}</view>
-<view class="area">{{contact}}</view>
+<view class="area">说明：{{message}}</view>
+<view class="area">联系：{{contact}}</view>

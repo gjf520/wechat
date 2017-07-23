@@ -12,7 +12,10 @@ Page({
    		var id = options.id;
    		 wx.request({
             url: 'https://nuanwan.wekeji.cn/student/index.php/trade/get_item', 
-            data: {id: id},
+            data: {
+            	id: id,
+            	distinct:"YinLingYue_666"
+            },
             method: "POST",
             header: {
               'content-type': 'application/x-www-form-urlencoded'
@@ -28,7 +31,7 @@ Page({
 			message: data.message,
 			contact: data.contact,
 			type: data.type,
-			textType: data.type == "sell" ? "转让" : "求购"
+			textType: data.type == "sell" ? "护肤" : "美妆"
 		})
 	}
 

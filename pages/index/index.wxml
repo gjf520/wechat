@@ -1,12 +1,8 @@
-
-<view class="container">
-	<view class="index-map">
-		<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" scale="14"  style="height:100%; width: 100%" show-location controls="{{controls}}" bindcontroltap="handleControlTap" bindmarkertap="bingMarkerTap"></map>
-	</view>
-	<view class="css-bottom">
-		<navigator url="/pages/publish/publish" class="bottom-publish">发布</navigator>
-		<view bindtap="searchBtn" class="bottom-search">搜索</view>
-	</view>
+<view class="map-con">
+	<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" style="width: 100%; height: 100%;" show-location controls="{{controls}}" bindcontroltap="handleControlTap" markers="{{markers}}" bindmarkertap="bingMarkerTap"></map>
 </view>
 
-
+<view class="bottom-area">
+	<navigator url="/pages/publish/publish" class="publish">发布信息</navigator>
+	<navigator url="/pages/search/search" class="search">搜索</navigator>
+</view>

@@ -1,15 +1,12 @@
 {
-  "pages":[
-  	
-    "pages/index/index",
-     "pages/publish/publish",
-    "pages/detail/detail",
-    "pages/search/search"
-   
-  ],
-  "window":{
-    "navigationBarBackgroundColor": "#03bbd5",
-    "navigationBarTextStyle":"black",
-    "enablePullDownRefresh": true
-  }
+    "pages":[
+    	"pages/index/index",
+    	"pages/publish/publish",
+    	"pages/detail/detail",
+    	"pages/search/search"
+    ],
+    "window":{
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor" : "#000"
+    }
 }

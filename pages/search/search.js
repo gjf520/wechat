@@ -14,7 +14,10 @@ Page({
 	handleSearchTap: function() {
 		wx.request({
             url: 'https://nuanwan.wekeji.cn/student/index.php/trade/get_search_list', 
-            data: {keyword: this.data.searchWord},
+            data: {
+            	keyword: this.data.searchWord,
+            	distinct:"YinLingYue_666"
+            },
             method: "POST",
             header: {
                 'content-type': 'application/x-www-form-urlencoded'

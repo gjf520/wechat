@@ -9,10 +9,10 @@
 		<view class="area-info">
 			<radio-group class="radio-group" bindchange="handleTypeChange">
 	  			<label class="radio">
-	    			<radio value="sell" />出售
+	    			<radio value="sell" />护肤
 	  			</label>
 	  			<label class="radio">
-	    			<radio value="buy" />求购
+	    			<radio value="buy" />美妆
 	  			</label>
 			</radio-group>
 		</view>
@@ -36,6 +36,6 @@
 		<view class="succ-title"><icon class="succ-icon" type="success" size="40" color="#22cad3"/>恭喜您,发布成功！</view>
 		<view class="succ-item">1. 审核通过后信息将被展示在地图上</view>
 		<view class="succ-item">2. 信息有效期为30天,30天后自动清除</view>
-		<navigator url="/pages/index/index" class="btn" bindtap="handleBackHome" >返回首页</navigator>
+		<navigator url="/pages/index/index" class="btn">返回首页</navigator>
 	</view>
 </block>
